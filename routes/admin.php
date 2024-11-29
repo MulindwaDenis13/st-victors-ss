@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 // Dashboard
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')->name('home-admin');
 /*Admin routes Start*/
 
 Route::get('/admins', 'AdminController@index')->name('admins');
